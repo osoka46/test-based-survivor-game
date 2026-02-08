@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class Player {
+    private int damage;
+    private int health;
+    private int money;
+    private String charName;
     private String playerName;
     private Scanner scanner = new Scanner(System.in);
 
@@ -12,8 +16,6 @@ public class Player {
     public void setPlayerName(String playerName) {
         this.playerName = playerName;
     }
-
-
 
     public Character selectChar(){
         Character [] characters = {new Samurai(),new Archer(),new Knight()};
@@ -32,6 +34,7 @@ public class Player {
         System.out.println("Dear "+this.playerName +", you have selected. "+characters[selectedCharId-1].getName()+
                 "\nHis features are as followings: ");
         selectedCharInfo(characters[selectedCharId-1]);
+        initGame(characters[selectedCharId-1]);
         return characters[selectedCharId-1];
     }
 
@@ -42,5 +45,15 @@ public class Player {
                 "\tHealth: "+character.getHealth()+
                 "\tMoney: "+character.getMoney());
     }
+
+    public void initGame(Character character){
+        this.charName = character.getName();
+        this.damage = character.getDamage();
+        this.playerName = getPlayerName();
+        this.health = character.getHealth();
+        this.money = character.getMoney();
+    }
+
+
 
 }
