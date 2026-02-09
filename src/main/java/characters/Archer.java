@@ -1,4 +1,6 @@
-public class Archer extends Character{
+package characters;
+
+public class Archer extends Character {
     private static final int ID =2;
     private static final int DAMAGE =7;
     private static final int HEALTH= 18;

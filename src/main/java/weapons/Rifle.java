@@ -1,5 +1,7 @@
-public class Rifle extends Weapon{
-    private static final String NAME = "Sword";
+package weapons;
+
+public class Rifle extends Weapon {
+    private static final String NAME = "weapons.Sword";
     private static final int ID = 3;
     private static final int DAMAGE = 7;
     private static final int MONEY =45;

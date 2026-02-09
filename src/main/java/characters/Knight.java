@@ -1,5 +1,6 @@
+package characters;
 
-public class Knight extends Character{
+public class Knight extends Character {
      final static int ID = 3;
      final static int DAMAGE = 8;
      final static int HEALTH = 24;

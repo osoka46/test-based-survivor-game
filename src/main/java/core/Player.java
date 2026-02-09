@@ -1,3 +1,8 @@
+package core;
+import characters.Archer;
+import characters.Character;
+import characters.Knight;
+import characters.Samurai;
 import java.util.Scanner;
 
 public class Player {
@@ -18,7 +23,7 @@ public class Player {
     }
 
     public Character selectChar(){
-        Character [] characters = {new Samurai(),new Archer(),new Knight()};
+        Character[] characters = {new Samurai(),new Archer(),new Knight()};
         int selectedCharId ;
 
         System.out.println("Characters:");
@@ -40,7 +45,7 @@ public class Player {
 
     public void selectedCharInfo(Character character){
         System.out.println("Name: " +character.getName()+
-                "\tID: "+character.getId()+
+                "\nID: "+character.getId()+
                 "\tDamage: "+character.getDamage()+
                 "\tHealth: "+character.getHealth()+
                 "\tMoney: "+character.getMoney());
@@ -52,6 +57,12 @@ public class Player {
         this.playerName = getPlayerName();
         this.health = character.getHealth();
         this.money = character.getMoney();
+    }
+
+    public void selectLoc(){
+        System.out.println("Select a location. ");
+        int selectedLoc = scanner.nextInt();
+
     }
 
 
