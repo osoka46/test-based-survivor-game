@@ -9,7 +9,7 @@ public class Cave extends BattleLoc {
     }
 
     @Override
-    boolean onLocation() {
+    public boolean onLocation() {
         System.out.println("You are in cave.");
         return false;
     }

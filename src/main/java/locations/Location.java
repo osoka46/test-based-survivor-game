@@ -1,16 +1,18 @@
 package locations;
 import core.Player;
+import java.util.Scanner;
 
 public abstract class Location {
     private Player player;
     private String name;
+    protected Scanner input = new Scanner(System.in);
 
     public Location(Player player, String name) {
         this.player = player;
         this.name = name;
     }
 
-    abstract boolean onLocation();
+    public abstract boolean onLocation();
 
     public Player getPlayer() {
         return player;

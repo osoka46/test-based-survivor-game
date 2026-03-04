@@ -1,15 +1,15 @@
-package weapons;
+package armors;
 
-public abstract class Weapon {
+public abstract class Armor {
     private int id;
     private String name;
-    private int damage;
+    private int defence;
     private int cost;
 
-    public Weapon(String name,int id, int damage, int cost) {
+    public Armor(String name, int id, int defence, int cost) {
         this.id=id;
         this.name = name;
-        this.damage = damage;
+        this.defence = defence;
         this.cost = cost;
     }
 
@@ -29,12 +29,12 @@ public abstract class Weapon {
        this.id = id;
     }
 
-    public int getDamage() {
-        return this.damage;
+    public int getDefence() {
+        return this.defence;
     }
 
-    public void setDamage(int damage) {
-        this.damage = damage;
+    public void setDefence(int damage) {
+        this.defence = damage;
     }
 
     public int getCost() {

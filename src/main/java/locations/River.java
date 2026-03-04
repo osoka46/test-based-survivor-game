@@ -8,7 +8,7 @@ public class River extends BattleLoc {
     }
 
     @Override
-    boolean onLocation() {
+    public boolean onLocation() {
         return false;
     }
 }

@@ -10,7 +10,8 @@ public class Forest extends BattleLoc {
 
 
     @Override
-    boolean onLocation() {
+    public boolean onLocation() {
+        System.out.println("You are in forest.");
         return false;
     }
 }
